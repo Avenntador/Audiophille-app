@@ -4,13 +4,15 @@
 $color-primary: #D87D4A;
 $color-secondary: #fbaf85;
 
-$color-gray-primary: #F1F1F1;
-$color-gray-secondary: #FAFAFA;
+$color-gray-primary: #CFCFCF;
+$color-gray-secondary: #F1F1F1;
 
 $color-black-primary: #000000;
 $color-black-secondary: #101010;
 
 $color-white: #FFFFFF;
+
+$color-error-red: #CD2C2C;
 
 //===============FONTS===================
 $font-family-regular: 'Manrope-Regular', sans-serif;
@@ -43,6 +45,12 @@ $font-size-button: 1.3rem;
 $font-size-input: 1.4rem;
 $font-size-input-label: 1.2rem;
 
+// INPUT-RADIO
+$font-size-input-radio-label: 1.4rem;
+
+// CART-COUNTER
+$font-size-cart-counter: 1.3rem;
+
 //===========LINE-HEIGHTS==================
 
 // HEADINGS
@@ -69,6 +77,12 @@ $line-height-button: 1.8rem;
 $line-height-input: 1.9rem;
 $line-height-input-label: 1.6rem;
 
+// INPUT-RADIO
+$line-height-input-radio: 1.9rem;
+
+// CART-COUNTER
+$line-height-cart-counter: 1.8rem;
+
 //==============LETTER SPACING=================
 
 // HEADINGS
@@ -87,3 +101,6 @@ $letter-spacing-subtitle: .1rem;
 
 // BUTTON
 $letter-spacing-button: .1rem;
+
+// CART-COUNTER
+$letter-spacing-cart-counter: .1rem;

@@ -6,6 +6,7 @@ module.exports = {
                     @import "src/sass/_variables.scss";
                     @import "src/sass/_reset.scss";
                     @import "src/sass/_typography.scss";
+                    @import "src/sass/_mixins.scss";
                 `,
             },
         },

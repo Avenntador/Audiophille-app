@@ -1,0 +1,18 @@
+.cart-counter {
+    width: 12rem;
+    height: 4.8rem;
+    background-color: $color-gray-secondary;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    font-family: $font-family-bold;
+    font-size: $font-size-cart-counter;
+    line-height: $line-height-cart-counter;
+    letter-spacing: $letter-spacing-cart-counter;
+
+    &__plus:hover, &__minus:hover {
+        cursor: pointer;
+        color: $color-secondary;
+    }
+}

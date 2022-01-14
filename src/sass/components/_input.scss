@@ -14,9 +14,16 @@
         border: 1px solid $color-primary;
     }
 
+    &:invalid ~ label {
+        color: $color-error-red;
+    }
+    &:invalid {
+        border: 2px solid $color-error-red;
+    }
+
     &__label {
         display: block;
-        margin-bottom: .9rem;
+        transform: translateY(-500%);
 
         font-family: $font-family-bold;
         font-size: $font-size-input-label;
