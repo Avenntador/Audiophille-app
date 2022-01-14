@@ -1,0 +1,70 @@
+h1, h2, h3, h4, h5, h6, .overline, .subtitle {
+    text-transform: uppercase;
+}
+ 
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-bold;
+    color: $color-black-primary;
+}
+
+.heading__one {
+    font-size: $font-size-h1;
+    line-height: $line-height-h1;
+    letter-spacing: $letter-spacing-h1;
+}
+
+.heading__two {
+    font-size: $font-size-h2;
+    line-height: $line-height-h2;
+    letter-spacing: $letter-spacing-h2;
+}
+
+.heading__three {
+    font-size: $font-size-h3;
+    line-height: $line-height-h3;
+    letter-spacing: $letter-spacing-h3;
+}
+
+.heading__four {
+    font-size: $font-size-h4;
+    line-height: $line-height-h4;
+    letter-spacing: $letter-spacing-h4;
+}
+
+.heading__five {
+    font-size: $font-size-h5;
+    line-height: $line-height-h5;
+    letter-spacing: $letter-spacing-h5;
+}
+
+.heading__six {
+    font-size: $font-size-h6;
+    line-height: $line-height-h6;
+    letter-spacing: $letter-spacing-h6;
+}
+
+.paragraph {
+    font-family: $font-family-medium;
+    line-height: $line-height-p;
+    font-size: $font-size-p;
+}
+
+.overline, .subtitle {
+    color: $color-primary;
+}
+
+.overline {
+    font-family: $font-family-regular;
+    font-size: $font-size-overline;
+    line-height: $line-height-overline;
+    letter-spacing: $letter-spacing-overline;
+}
+
+.subtitle {
+    font-family: $font-family-bold;
+    font-size: $font-size-subtitle;
+    line-height: $line-height-subtitle;
+    letter-spacing: $letter-spacing-subtitle;
+}
+
+

@@ -1,0 +1,47 @@
+
+.btn {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: $font-family-bold;
+    font-size: $font-size-button;
+    line-height: $line-height-button;
+    letter-spacing: $letter-spacing-button;
+
+    &__one, &__two {
+        width: 16rem;
+        height: 4.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__one {
+        color: $color-white;
+        background-color: $color-primary;
+    }
+
+    &__one:hover {
+        background-color: $color-secondary;
+    }
+
+    &__two {
+        color: $color-black-primary;
+        background-color: $color-white;
+        border: 1px solid $color-black-primary;
+    }
+
+    &__two:hover {
+        color: $color-white;
+        background-color: $color-black-primary;
+    }
+
+    &__three {
+        background-color: '';
+        color: $color-black-primary;
+    }
+
+    &__three:hover {
+        color: $color-primary;
+    }
+}

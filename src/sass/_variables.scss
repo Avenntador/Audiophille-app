@@ -1,7 +1,6 @@
 @import './fonts';
 
-
-//COLOR
+//===============COLORS====================
 $color-primary: #D87D4A;
 $color-secondary: #fbaf85;
 
@@ -13,8 +12,78 @@ $color-black-secondary: #101010;
 
 $color-white: #FFFFFF;
 
-
-//FONT
+//===============FONTS===================
 $font-family-regular: 'Manrope-Regular', sans-serif;
 $font-family-medium: 'Manrope-Medium', sans-serif;
 $font-family-bold: 'Manrope-Bold', sans-serif;
+
+//==============FONT-SIZE================
+
+// HEADINGS
+$font-size-h1: 5.6rem;
+$font-size-h2: 4rem;
+$font-size-h3: 3.2rem;
+$font-size-h4: 2.8rem;
+$font-size-h5: 2.4rem;
+$font-size-h6: 1.8rem;
+
+// PARAGRAPH
+$font-size-p: 1.5rem;
+
+// OVERLINE
+$font-size-overline: 1.4rem;
+
+// SUBTITLE
+$font-size-subtitle: 1.3rem;
+
+// BUTTON
+$font-size-button: 1.3rem;
+
+// INPUT
+$font-size-input: 1.4rem;
+$font-size-input-label: 1.2rem;
+
+//===========LINE-HEIGHTS==================
+
+// HEADINGS
+$line-height-h1: 5.8rem;
+$line-height-h2: 4.4rem;
+$line-height-h3: 3.2rem;
+$line-height-h4: 2.8rem;
+$line-height-h5: 2.4rem;
+$line-height-h6: 1.8rem;
+
+// PARAGRAPH
+$line-height-p: 2.5rem;
+
+// OVERLINE
+$line-height-overline: 1.9rem;
+
+// SUBTITLE
+$line-height-subtitle: 2.5rem;
+
+// BUTTON
+$line-height-button: 1.8rem;
+
+// INPUT
+$line-height-input: 1.9rem;
+$line-height-input-label: 1.6rem;
+
+//==============LETTER SPACING=================
+
+// HEADINGS
+$letter-spacing-h1: .2rem;
+$letter-spacing-h2: 0.15rem;
+$letter-spacing-h3: 0.115rem;
+$letter-spacing-h4: .2rem;
+$letter-spacing-h5: 0.17rem;
+$letter-spacing-h6: 0.13rem;
+
+// OVERLINE
+$letter-spacing-overline: 1rem;
+
+// SUBTITLE
+$letter-spacing-subtitle: .1rem;
+
+// BUTTON
+$letter-spacing-button: .1rem;
