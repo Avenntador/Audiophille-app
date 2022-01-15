@@ -1,0 +1,101 @@
+.products {
+    height: 129.6rem;
+    margin-top: 16.8rem;
+   
+    & > *:not(:last-child) {
+        margin-bottom: 4.8rem;
+    }
+
+    &__item {
+        height: 32rem;
+        border-radius: .8rem;
+    }
+
+    & > :first-child {
+        height: 56rem;
+    }
+}
+
+.zx9 {
+    position: relative;
+    background-color: $color-primary;
+    overflow: hidden;
+    
+    & > .product__desc {
+        position: absolute;
+        z-index: 1000;
+        right: 7%;
+        top: 25%;
+
+        & > p {
+            color: $color-white !important;
+            opacity: 0.5;
+        }
+
+        & > h1 {
+            color: $color-white !important;
+        }
+
+        & > .paragraph {
+            opacity: 0.75;
+            margin-bottom: 4rem !important;
+        }
+
+        & > *:not(:last-child) {
+            margin-bottom: 2.4rem;
+        }
+    }
+
+    &__img {
+        width: auto;
+        height: 49rem;
+        position: absolute;
+        top: 15%;
+        left: 12%;
+        z-index: 100;
+    }
+}
+
+.zx7 {
+    background-image: url('../../../assets/home/desktop/image-speaker-zx7.jpg');
+    position: relative;
+
+    & > .product__desc {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+
+        & > *:not(:last-child) {
+            margin-bottom: 3.2rem;
+        }
+    }
+}
+
+.yx1 {
+    display: flex;
+    justify-content: space-between;
+
+    & > * {
+        border-radius: .8rem;
+        overflow: hidden;
+    }
+    
+    & > .product__desc {
+        background-color: $color-gray-secondary;
+        width: 54rem;
+        height: 100%;
+        
+        @include dflex-center;
+        flex-direction: column;
+
+        & > div {
+            & > * { margin-bottom: 3.2rem;}
+        }
+    }
+}
+
+.pattern {
+    position: absolute;
+    left: -13%;
+    z-index: 1;
+}

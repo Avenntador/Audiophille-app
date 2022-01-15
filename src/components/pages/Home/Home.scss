@@ -1,0 +1,12 @@
+.main {
+    max-width: 110rem;
+    margin: 0 auto;
+}
+
+.main > :first-child {
+    margin-top: 12rem;
+}
+
+.main > :last-child {
+    margin: 20rem 0 20rem 0;
+}
