@@ -9,7 +9,7 @@ function Home() {
     return (
         <>
             <Header />
-            <main className="main">
+            <main className="home__main">
                 <Thumbnail />
                 <Products />
                 <About />

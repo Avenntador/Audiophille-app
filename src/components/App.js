@@ -1,11 +1,13 @@
 import './App.scss';
 import Home from './pages/Home/Home';
-import Nav from './pages/GlobalLayouts/Nav/Nav';
+import Earphones from './pages/Earphones/Earphones';
+import Headphones from './pages/Headphones/Headphones';
+import Speakers from './pages/Speakers/Speakers';
 
 function App() {
   return (
     <div className="App">
-      <Home />
+        <Speakers />
     </div>
   );
 }

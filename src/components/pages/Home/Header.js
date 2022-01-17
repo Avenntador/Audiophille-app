@@ -1,12 +1,12 @@
 import './Header.scss';
-import Nav from '../GlobalLayouts/Nav/Nav';
+import Navbar from '../GlobalLayouts/Navbar/Navbar';
 import Button from '../../form/Button';
 
 function Header() {
     return (
-        <header className='header'>
+        <header className='home__header'>
             <div className="header-content">
-                <Nav />
+                <Navbar />
                 <div className="header__text">
                     <p className="overline">new product</p>
                     <h1 className="heading__one">XX99 Mark II <br/> Headphones</h1>
