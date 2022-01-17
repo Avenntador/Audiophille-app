@@ -1,0 +1,12 @@
+.product-header {
+    background-color: $color-black-primary;
+}
+
+.product-container {
+    width: 110rem;
+    margin: 0 auto;
+
+    & > :first-child {
+        margin-top: 7.9rem;
+    }
+}

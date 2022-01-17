@@ -12,10 +12,6 @@
             color: $color-primary;
         }
 
-        & > p {
-            opacity: 0.5;
-        }
-
         & > *:not(:last-child) {
             margin-bottom: 3.2rem;
         }
