@@ -3,7 +3,7 @@ import Home from './pages/Home/Home';
 import Earphones from './pages/Earphones/Earphones';
 import Headphones from './pages/Headphones/Headphones';
 import Speakers from './pages/Speakers/Speakers';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+// import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import ProductItem from './pages/ProductItem/ProductItem';
 
 function App() {

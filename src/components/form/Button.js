@@ -1,9 +1,9 @@
 import '../../sass/components/_button.scss';
 
-function Button({ type }) {
+function Button({ type, title='see product' }) {
     return (
         <>
-            <a className={`btn btn__${type}`} href="#">see product</a>
+            <a className={`btn btn__${type}`} href="#">{title}</a>
         </>
     );
 }

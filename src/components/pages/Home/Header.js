@@ -11,7 +11,7 @@ function Header() {
                     <p className="overline">new product</p>
                     <h1 className="heading__one">XX99 Mark II <br/> Headphones</h1>
                     <p className="paragraph">Experience natural, lifelike audio and exceptional <br/> build quality made for the passionate music <br/> enthusiast.</p>
-                    <Button type={'one'}/>
+                    <Button type={'one'} />
                 </div>
             </div>
         </header>
