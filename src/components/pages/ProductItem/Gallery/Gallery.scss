@@ -1,0 +1,25 @@
+.product__gallery {
+    height: 59.2rem;
+    display: flex;
+    justify-content: space-between;
+
+    &_small {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+        & > img {
+            width: 44.5rem;
+            height: 28rem;
+            border-radius: .8rem;
+        }
+    }
+
+    &_big {
+        & > img {
+            width: 63.5rem;
+            height: 59.2rem;
+            border-radius: .8rem;
+        }
+    }
+}

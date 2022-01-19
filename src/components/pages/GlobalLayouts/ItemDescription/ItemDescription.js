@@ -1,14 +1,15 @@
 import './ItemDescription.scss';
 import Button from '../../../form/Button';
 
+
 function ItemDescription({image, title, desc, render}) {
 
+    let imageQuery = image.substring(2);
     
-
     return(
         <div className='item'>
             <div className='item__img'>
-                <img src={image} alt="item" />
+                <img src={imageQuery} alt="item" />
             </div>
             <div className='item__info'>
                  {render ? render() : null}

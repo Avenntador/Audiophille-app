@@ -1,9 +1,11 @@
 import './Footer.scss';
 import Nav from '../Nav/Nav';
-import AppLogo from '../../../../assets/shared/desktop/logo.svg';
-import FB from '../../../../assets/shared/desktop/icon-facebook.svg';
-import Inst from '../../../../assets/shared/desktop/icon-instagram.svg';
-import Twitter from '../../../../assets/shared/desktop/icon-twitter.svg';
+
+
+let AppLogo = 'assets/shared/desktop/logo.svg';
+let FB = 'assets/shared/desktop/icon-facebook.svg';
+let Inst = 'assets/shared/desktop/icon-instagram.svg';
+let Twitter = 'assets/shared/desktop/icon-twitter.svg';
 
 function Footer() {
     return(

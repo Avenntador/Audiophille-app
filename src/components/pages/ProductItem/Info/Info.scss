@@ -1,0 +1,30 @@
+.product__info {
+    height: 31.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__features {
+    width: 63.5rem;
+
+    & > :first-child {
+        margin-bottom: 3.2rem;
+    }
+}
+
+.product__equip {
+    width: 35rem;
+
+    & > :first-child {
+        margin-bottom: 3.2rem;
+    }
+
+    & > p > span {
+        margin-right: 2.1rem;
+        color: $color-primary;
+    }
+
+    & > p {
+        margin-bottom: .8rem;
+    }
+}

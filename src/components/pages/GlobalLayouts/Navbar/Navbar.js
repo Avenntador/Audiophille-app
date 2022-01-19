@@ -1,7 +1,8 @@
 import './Navbar.scss';
-import AppLogo from '../../../../assets/shared/desktop/logo.svg';
-import IconCart from '../../../../assets/shared/desktop/icon-cart.svg';
 import Nav from '../Nav/Nav';
+
+let AppLogo = 'assets/shared/desktop/logo.svg';
+let IconCart = 'assets/shared/desktop/icon-cart.svg';
 
 function Navbar() {
     return (

@@ -1,8 +1,11 @@
 import './Thumbnail.scss';
-import ThumbnailHeadphoneImg from '../../../../assets/shared/desktop/image-category-thumbnail-headphones.png';
-import ThumbnailEarphoneImg from '../../../../assets/shared/desktop/image-category-thumbnail-earphones.png';
-import ThumbnailSpeakerImg from '../../../../assets/shared/desktop/image-category-thumbnail-speakers.png';
 import SecondaryButton from '../../../form/SecondaryButton';
+
+
+let ThumbnailHeadphoneImg = 'assets/shared/desktop/image-category-thumbnail-headphones.png';
+let ThumbnailEarphoneImg = 'assets/shared/desktop/image-category-thumbnail-earphones.png';
+let ThumbnailSpeakerImg = 'assets/shared/desktop/image-category-thumbnail-speakers.png';
+
 
 function Thumbnail() {
     return (

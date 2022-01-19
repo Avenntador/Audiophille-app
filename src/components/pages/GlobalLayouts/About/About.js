@@ -1,7 +1,9 @@
 import './About.scss';
-import aboutImg from '../../../../assets/shared/desktop/image-best-gear.jpg';
 
 function About() {
+
+    let aboutImg = 'assets/shared/desktop/image-best-gear.jpg';
+
     return(
         <div className='about'>
             <div className="about__desc">

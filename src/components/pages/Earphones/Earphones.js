@@ -3,18 +3,34 @@ import Navbar from '../GlobalLayouts/Navbar/Navbar';
 import Thumbnail from '../GlobalLayouts/Thumbnail/Thumbnail';
 import Footer from '../GlobalLayouts/Footer/Footer';
 import About from '../GlobalLayouts/About/About';
+
 import ItemDescription from '../GlobalLayouts/ItemDescription/ItemDescription';
-import EarphonesImage from '../../../assets/product-yx1-earphones/desktop/image-product.jpg'
+import ItemDescriptionReversed from '../GlobalLayouts/ItemDescriptionReversed/ItemDescriptionReversed';
 
-
-const title = <>YX1 WIRELESS <br/> EARPHONES</>;
-const desc = <>
-                Tailor your listening experience with bespoke dynamic drivers <br /> from the new YX1 Wireless Earphones. Enjoy incredible <br /> high-fidelity sound even in noisy environments with its active <br /> noise cancellation feature.
-            </>
+import { useState, useEffect } from 'react';
 
 
 function Earphones() {
-    return(
+
+    const [earphones, setEarphones] = useState([]);
+
+    useEffect(() => {
+        fetch('http://localhost:4000/data')
+            .then(response => response.json())
+            .then(response => {
+                console.log(response);
+                const recievedHeadphones = [];
+                response.forEach(item => {
+                    if (item.category === 'earphones') {
+                        recievedHeadphones.push(item);
+                    }
+
+                })
+                setEarphones(recievedHeadphones);
+            });
+    }, [])
+
+    return (
         <>
             <header className='earphones__header'>
                 <div className="header__content">
@@ -23,12 +39,32 @@ function Earphones() {
                 </div>
             </header>
             <div className="earphones__main">
-                <ItemDescription 
-                    image={EarphonesImage}
-                    title={title}
-                    desc={desc}
-                    render={() => <p className="overline">new product</p>}
-                />
+                {earphones.map((item, idx) => {
+                    if (idx === 0) {
+                        return <ItemDescription
+                            key={item.id}
+                            image={item.categoryImage.desktop}
+                            title={item.name}
+                            desc={item.description}
+                            render={() => <p className="overline">new product</p>}
+                        />
+                    }
+                    if (idx % 2 === 0) {
+                        return <ItemDescription
+                            key={item.id}
+                            image={item.categoryImage.desktop}
+                            title={item.name}
+                            desc={item.description}
+                        />
+                    } else {
+                        return <ItemDescriptionReversed
+                            key={item.id}
+                            image={item.categoryImage.desktop}
+                            title={item.name}
+                            desc={item.description}
+                        />
+                    }
+                })}
                 <Thumbnail />
                 <About />
             </div>
