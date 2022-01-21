@@ -1,27 +1,32 @@
 import './Other.scss';
 import Button from '../../../form/Button';
 
-function Other() {
+
+function Other({ others }) {
+
     return (
         <div className="product__other">
-            {/* <h3 className="heading__three">you may also like</h3>
+            <h3 className="heading__three">you may also like</h3>
             <div className="product__other_items">
-                <div className="item">
-                    <img src={OtherImg1} alt="" />
-                    <h5 className="heading__five">XX99 MARK I</h5>
-                    <Button type={'one'} />
-                </div>
-                <div className="item">
-                    <img src={OtherImg2} alt="" />
-                    <h5 className="heading__five"> XX59</h5>
-                    <Button type={'one'} />
-                </div>
-                <div className="item">
-                    <img src={OtherImg3} alt="" />
-                    <h5 className="heading__five">ZX9 SPEAKER</h5>
-                    <Button type={'one'} />
-                </div>
-            </div> */}
+                {others.map(item => {
+                    let image = item.image.desktop.substring(1);
+
+                    let category = '';
+                    if (item.slug.includes('headphone')) {
+                        category = 'headphones';
+                    } else if (item.slug.includes('earphone')) {
+                        category = 'earphones';
+                    } else if (item.slug.includes('speaker')) {
+                        category = 'speakers';
+                    }
+
+                    return <div className="item" key={Date.now() + Math.random() * 0.5}>
+                        <img src={image} alt="others" />
+                        <h5 className="heading__five">{item.name}</h5>
+                        <Button type={'one'} slug={item.slug} to={`/${category}`}/>
+                    </div>
+                })}
+            </div>
         </div>
     )
 }

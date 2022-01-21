@@ -24,7 +24,7 @@
     & > .product__desc {
         position: absolute;
         z-index: 1000;
-        right: 7%;
+        right: -63%;
         top: 25%;
 
         & > p {
@@ -62,7 +62,7 @@
     & > .product__desc {
         position: absolute;
         top: 30%;
-        left: 10%;
+        left: 0%;
 
         & > *:not(:last-child) {
             margin-bottom: 3.2rem;
@@ -78,7 +78,7 @@
         border-radius: .8rem;
         overflow: hidden;
     }
-    
+
     & > .product__desc {
         background-color: $color-gray-secondary;
         width: 54rem;

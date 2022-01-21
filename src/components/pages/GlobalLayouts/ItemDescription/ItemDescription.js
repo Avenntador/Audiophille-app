@@ -2,7 +2,7 @@ import './ItemDescription.scss';
 import Button from '../../../form/Button';
 
 
-function ItemDescription({image, title, desc, render}) {
+function ItemDescription({image, title, desc, render, slug}) {
 
     let imageQuery = image.substring(2);
     
@@ -15,7 +15,7 @@ function ItemDescription({image, title, desc, render}) {
                  {render ? render() : null}
                 <h2 className='heading__two'>{title}</h2>
                 <p className="paragraph">{desc}</p>
-                <Button type={'one'} />
+                <Button type={'one'} slug={slug}/>
             </div>
         </div>
     )

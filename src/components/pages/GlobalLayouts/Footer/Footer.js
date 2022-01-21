@@ -2,10 +2,10 @@ import './Footer.scss';
 import Nav from '../Nav/Nav';
 
 
-let AppLogo = 'assets/shared/desktop/logo.svg';
-let FB = 'assets/shared/desktop/icon-facebook.svg';
-let Inst = 'assets/shared/desktop/icon-instagram.svg';
-let Twitter = 'assets/shared/desktop/icon-twitter.svg';
+let AppLogo = '/assets/shared/desktop/logo.svg';
+let FB = '/assets/shared/desktop/icon-facebook.svg';
+let Inst = '/assets/shared/desktop/icon-instagram.svg';
+let Twitter = '/assets/shared/desktop/icon-twitter.svg';
 
 function Footer() {
     return(

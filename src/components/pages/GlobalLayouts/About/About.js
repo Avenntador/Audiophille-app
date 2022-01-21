@@ -2,7 +2,7 @@ import './About.scss';
 
 function About() {
 
-    let aboutImg = 'assets/shared/desktop/image-best-gear.jpg';
+    let aboutImg = '/assets/shared/desktop/image-best-gear.jpg';
 
     return(
         <div className='about'>

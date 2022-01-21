@@ -1,8 +1,8 @@
 import './Navbar.scss';
 import Nav from '../Nav/Nav';
 
-let AppLogo = 'assets/shared/desktop/logo.svg';
-let IconCart = 'assets/shared/desktop/icon-cart.svg';
+let AppLogo = '/assets/shared/desktop/logo.svg';
+let IconCart = '/assets/shared/desktop/icon-cart.svg';
 
 function Navbar() {
     return (
@@ -10,10 +10,10 @@ function Navbar() {
             <div className="nav__item">
                 <img src={AppLogo} alt="application logo" />
             </div>
-             <Nav />
+            <Nav />
             <div className="nav__item">
                 <img src={IconCart} alt="application logo" />
-            </div> 
+            </div>
         </div>
     )
 }

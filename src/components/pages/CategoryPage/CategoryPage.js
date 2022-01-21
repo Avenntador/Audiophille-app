@@ -17,7 +17,6 @@ function CategoryPage({categoryType}) {
         fetch('http://localhost:4000/data')
             .then(response => response.json())
             .then(response => {
-                console.log(response);
                 let recievedCategory = [];
                 response.forEach(item => {
                     if (item.category === categoryType) {
