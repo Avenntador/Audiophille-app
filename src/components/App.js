@@ -1,27 +1,38 @@
 import './App.scss';
+
+import { Routes, Route } from 'react-router-dom';
+import { useState } from 'react';
+
 import Home from './pages/Home/Home';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ProductItem from './pages/ProductItem/ProductItem';
 import CategoryPage from './pages/CategoryPage/CategoryPage';
-import ScrollToTop from './ScrollToTop';
+import Cart from './pages/Cart/Cart';
+import Modal from './pages/GlobalLayouts/Modal/Modal';
+
 
 function App() {
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  }
+
+  const cartModal = isModalOpen ? <Modal><Cart toggleModal={toggleModal} /></Modal> : null;
+
   return (
     <div className="App">
-      <Router>
-        <ScrollToTop>
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='headphones' element={<CategoryPage categoryType={'headphones'} />} />
-            <Route path='speakers' element={<CategoryPage categoryType={'speakers'} />} />
-            <Route path='earphones' element={<CategoryPage categoryType={'earphones'} />} />
+       {cartModal}
+        <Routes>
+            <Route path='/' element={<Home toggleModal={toggleModal}/>} />
+            <Route path='headphones' element={<CategoryPage categoryType={'headphones'} toggleModal={toggleModal}/>} />
+            <Route path='speakers' element={<CategoryPage categoryType={'speakers'} toggleModal={toggleModal}/>} />
+            <Route path='earphones' element={<CategoryPage categoryType={'earphones'} toggleModal={toggleModal}/>} />
 
-            <Route path='earphones/:productId' element={<ProductItem />} />
-            <Route path='headphones/:productId' element={<ProductItem />} />
-            <Route path='speakers/:productId' element={<ProductItem />} />
-          </Routes>
-        </ScrollToTop>
-      </Router>
+            <Route path='earphones/:productId' element={<ProductItem toggleModal={toggleModal}/>} />
+            <Route path='headphones/:productId' element={<ProductItem toggleModal={toggleModal}/>} />
+            <Route path='speakers/:productId' element={<ProductItem toggleModal={toggleModal}/>} />
+        </Routes>
     </div>
   );
 }

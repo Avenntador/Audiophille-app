@@ -14,7 +14,7 @@ import About from '../GlobalLayouts/About/About';
 import Footer from '../GlobalLayouts/Footer/Footer';
 
 
-function ProductItem() {
+function ProductItem({toggleModal}) {
 
     const navigate = useNavigate();
     const [product, setProduct] = useState({});
@@ -38,7 +38,7 @@ function ProductItem() {
         return (
             <>
                 <header className="product-header">
-                    <Navbar />
+                    <Navbar toggleModal={toggleModal}/>
                 </header>
                 <div className="product-container">
                     <p onClick={() => navigate(-1)} className="paragraph back-btn">Go back</p>

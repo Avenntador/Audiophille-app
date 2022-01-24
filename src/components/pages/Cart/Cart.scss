@@ -1,0 +1,32 @@
+.cart-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.425);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+.cart {
+    width: 37.7rem;
+    border-radius: .8rem;
+    padding: 3.3rem;
+    background-color: $color-white;
+    position: absolute;
+    top: 11%;
+    left: 60%;
+
+    & > :first-child {
+        margin-bottom: 3.2rem;
+    }
+
+    & > :last-child {
+        width: 100%;
+    }
+   
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+}

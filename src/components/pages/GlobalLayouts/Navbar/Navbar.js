@@ -1,19 +1,25 @@
 import './Navbar.scss';
+
 import Nav from '../Nav/Nav';
+import Cart from '../../Cart/Cart';
 
 let AppLogo = '/assets/shared/desktop/logo.svg';
 let IconCart = '/assets/shared/desktop/icon-cart.svg';
 
-function Navbar() {
+
+function Navbar({toggleModal}) {
+
     return (
         <div className='navbar'>
             <div className="nav__item">
-                <img src={AppLogo} alt="application logo" />
+                <img  src={AppLogo} alt="application logo" />
             </div>
             <Nav />
             <div className="nav__item">
-                <img src={IconCart} alt="application logo" />
+                <img onClick={toggleModal} src={IconCart} alt="application logo" />
             </div>
+            
+
         </div>
     )
 }

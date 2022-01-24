@@ -8,3 +8,10 @@
     max-width: 110rem;
     margin: 0 auto;
 }
+
+.nav__item {
+    & > img {
+        cursor: pointer;
+    }
+}
+

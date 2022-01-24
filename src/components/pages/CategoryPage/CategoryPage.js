@@ -8,7 +8,7 @@ import Header from './Header/Header';
 
 import { useState, useEffect } from 'react';
 
-function CategoryPage({categoryType}) {
+function CategoryPage({categoryType, toggleModal}) {
 
     const [category, setCategory] = useState([]);
     const [categoryHeader, setCategoryHeader] = useState('');
@@ -31,7 +31,7 @@ function CategoryPage({categoryType}) {
     return (
         <>
             <header className='category__header'>
-                <Header categoryHeader={categoryHeader}/>
+                <Header categoryHeader={categoryHeader} toggleModal={toggleModal}/>
             </header>
             <div className="category__main">
                 <MainContent category={category} />

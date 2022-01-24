@@ -5,10 +5,10 @@ import Products from './Products';
 import About from '../GlobalLayouts/About/About';
 import Footer from '../GlobalLayouts/Footer/Footer';
 
-function Home() {
+function Home({toggleModal}) {
     return (
         <>
-            <Header />
+            <Header toggleModal={toggleModal}/>
             <main className="home__main">
                 <Thumbnail />
                 <Products />
