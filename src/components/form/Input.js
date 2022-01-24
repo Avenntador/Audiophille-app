@@ -1,10 +1,10 @@
 import '../../sass/components/_input.scss';
 
-function Input() {
+function Input({type, title = '', placeholder }) {
     return (
         <div>
-            <input name='input' className='input' type="text" placeholder='Insert your name' />
-            <label className='input__label' htmlFor='input'>Name</label>
+            <input name='input' className='input' type={type} placeholder={placeholder} />
+            <label className='input__label' htmlFor='input'>{title}</label>
         </div>
     );
 }

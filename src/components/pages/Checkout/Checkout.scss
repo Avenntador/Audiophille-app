@@ -2,7 +2,112 @@
     background-color: $color-black-primary;
 }
 
-.checkout-main {
+.checkout-main, .back-btn {
     max-width: 110rem;
-    margin: 0 auto;
+}
+
+.checkout-main {
+    display: flex;
+    justify-content: space-between;
+    margin: 3.8rem auto 14.1rem auto; 
+}
+
+.back-btn {
+    margin: 7.9rem auto 0 auto; 
+}
+
+.checkout__user-info, .checkout__summary {
+    background-color: $color-white;
+    border-radius: .8rem;
+}
+
+.checkout__user-info {
+    width: 73rem;
+    // height: 112.6rem;
+    padding: 5.4rem 4.8rem;
+
+    & > :not(:last-child) {
+        margin-bottom: 5.3rem;
+    }
+}
+
+.cheackout__billing-details {
+    
+    & > :last-child {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 1.6rem;
+
+        & > * {
+            margin-top: 4.1rem;
+        }
+
+        & > :nth-child(2) {
+            margin-left: 1.6rem;
+        }
+    }
+}
+
+.checkout__shipping-info {
+
+    & > * {
+        margin-top: 4.1rem;
+    }
+
+    & > :nth-child(2) {
+        & > :nth-child(1) {
+            width: 100%;
+        }
+    }
+
+    & > :last-child {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 1.6rem;
+
+        & > * {
+            margin-top: 4.1rem;
+        }
+
+        & > :nth-child(2) {
+            margin-left: 1.6rem;
+        }
+    }
+}
+
+.checkout__payment-details {
+    & > :not(:first-child) {
+        margin-bottom: 5.3rem;
+    }
+
+    & > :last-child {
+        margin-bottom: 0;
+
+        & > :nth-child(2) {
+            margin-left: 1.6rem;
+        }
+    }
+}
+
+.checkout__payment-method {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &_label {
+        display: block;
+        font-size: 1.2rem;
+        font-family: $font-family-bold;
+        line-height: 1.6rem;
+    }
+
+}
+
+.checkout__payment-inputs {
+    display: flex;
+}
+
+.checkout__summary {
+    width: 35rem;
+    height: 61.2rem;
+    padding: 3.2rem 3.3rem
 }
