@@ -8,7 +8,7 @@ import ProductItem from './pages/ProductItem/ProductItem';
 import CategoryPage from './pages/CategoryPage/CategoryPage';
 import Cart from './pages/Cart/Cart';
 import Modal from './pages/GlobalLayouts/Modal/Modal';
-
+import Checkout from './pages/Checkout/Checkout';
 
 function App() {
 
@@ -32,6 +32,8 @@ function App() {
             <Route path='earphones/:productId' element={<ProductItem toggleModal={toggleModal}/>} />
             <Route path='headphones/:productId' element={<ProductItem toggleModal={toggleModal}/>} />
             <Route path='speakers/:productId' element={<ProductItem toggleModal={toggleModal}/>} />
+
+            <Route path='/checkout' element={<Checkout />} />
         </Routes>
     </div>
   );
