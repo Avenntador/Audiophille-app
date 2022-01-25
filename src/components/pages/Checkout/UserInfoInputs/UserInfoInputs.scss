@@ -1,0 +1,13 @@
+.checkout {
+    &__user-info {
+        width: 73rem;
+        padding: 5.4rem 4.8rem;
+        background-color: $color-white;
+        border-radius: .8rem;
+    
+        & > :not(:last-child) {
+            margin-bottom: 5.3rem;
+        }
+    } 
+}
+

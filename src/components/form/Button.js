@@ -1,7 +1,7 @@
 import '../../sass/components/_button.scss';
 import { useLocation, Link } from 'react-router-dom';
 
-function Button({ type, title = 'see product', slug, to = '', category = '' }) {
+function Button({ type, title = 'see product', slug = '', to = '', category = '' }) {
     const url = useLocation();
 
 

@@ -1,5 +1,5 @@
 import './PaymentInputs.scss';
-import Input from '../../../form/Input';
+import Input from '../../../../form/Input';
 
 function PaymentInputs() {
     return(

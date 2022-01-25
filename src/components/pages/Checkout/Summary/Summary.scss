@@ -1,0 +1,16 @@
+.checkout__summary {
+    width: 35rem;
+    height: 61.2rem;
+    padding: 3.2rem 3.3rem;
+    background-color: $color-white;
+    border-radius: .8rem;
+
+    & > :first-child {
+        margin-bottom: 3.1rem;
+    }
+
+    & > :last-child {
+        width: 100%;
+        margin-top: 3.2rem;
+    }
+}

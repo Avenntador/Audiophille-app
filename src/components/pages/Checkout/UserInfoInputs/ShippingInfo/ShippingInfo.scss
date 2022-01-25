@@ -1,0 +1,28 @@
+.checkout {
+    &__shipping-info {
+    
+        & > * {
+            margin-top: 4.1rem;
+        }
+    
+        & > :nth-child(2) {
+            & > :nth-child(1) {
+                width: 100%;
+            }
+        }
+    
+        & > :last-child {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 1.6rem;
+    
+            & > * {
+                margin-top: 4.1rem;
+            }
+    
+            & > :nth-child(2) {
+                margin-left: 1.6rem;
+            }
+        }
+    }
+}

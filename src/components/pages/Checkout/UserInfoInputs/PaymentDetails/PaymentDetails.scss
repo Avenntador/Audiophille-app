@@ -1,0 +1,29 @@
+.checkout {
+    &__payment-details {
+        & > :not(:first-child) {
+            margin-bottom: 5.3rem;
+        }
+    
+        & > :last-child {
+            margin-bottom: 0;
+    
+            & > :nth-child(2) {
+                margin-left: 1.6rem;
+            }
+        }
+    }
+    
+    &__payment-method {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &_label {
+            display: block;
+            font-size: 1.2rem;
+            font-family: $font-family-bold;
+            line-height: 1.6rem;
+        }
+    }
+}
+
+
