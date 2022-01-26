@@ -1,9 +1,9 @@
 import './Products.scss';
-import Button from '../../form/Button';
+import Button from '../../../form/Button';
 
-let PatterCircles = 'assets/home/desktop/pattern-circles.svg';
-let zx9 = 'assets/home/desktop/image-speaker-zx9.png';
-let yx1 = 'assets/home/desktop/image-earphones-yx1.jpg';
+let PatterCircles = '/assets/home/desktop/pattern-circles.svg';
+let zx9 = '/assets/home/desktop/image-speaker-zx9.png';
+let yx1 = '/assets/home/desktop/image-earphones-yx1.jpg';
 
 function Products() {
     return (

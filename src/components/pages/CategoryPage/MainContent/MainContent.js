@@ -1,7 +1,7 @@
 import './MainContent.scss';
 
-import ItemDescription from "../../GlobalLayouts/ItemDescription/ItemDescription";
-import ItemDescriptionReversed from '../../GlobalLayouts/ItemDescriptionReversed/ItemDescriptionReversed';
+import ItemDescription from './ItemDescription/ItemDescription';
+import ItemDescriptionReversed from './ItemDescriptionReversed/ItemDescriptionReversed';
 
 function MainContent({ category }) {
     return (

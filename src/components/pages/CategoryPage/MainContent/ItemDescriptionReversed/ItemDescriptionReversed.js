@@ -1,5 +1,5 @@
 import './ItemDescriptionReversed.scss';
-import Button from '../../../form/Button';
+import Button from '../../../../form/Button';
 
 function ItemDescriptionReverse({image, title, desc, slug}) {
 

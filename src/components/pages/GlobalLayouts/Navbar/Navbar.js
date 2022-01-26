@@ -1,11 +1,9 @@
 import './Navbar.scss';
 
 import Nav from '../Nav/Nav';
-import Cart from '../../Cart/Cart';
 
-let AppLogo = '/assets/shared/desktop/logo.svg';
-let IconCart = '/assets/shared/desktop/icon-cart.svg';
-
+const AppLogo = '/assets/shared/desktop/logo.svg';
+const IconCart = '/assets/shared/desktop/icon-cart.svg';
 
 function Navbar({toggleModal}) {
 

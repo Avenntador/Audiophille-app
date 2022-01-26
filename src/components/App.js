@@ -7,8 +7,9 @@ import Home from './pages/Home/Home';
 import ProductItem from './pages/ProductItem/ProductItem';
 import CategoryPage from './pages/CategoryPage/CategoryPage';
 import Cart from './pages/Cart/Cart';
-import Modal from './pages/GlobalLayouts/Modal/Modal';
+import Modal from './utility/Modal';
 import Checkout from './pages/Checkout/Checkout';
+import SuccessBuy from './pages/SuccessBuy/SuccessBuy';
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
             <Route path='speakers/:productId' element={<ProductItem toggleModal={toggleModal}/>} />
 
             <Route path='/checkout' element={<Checkout />} />
+            <Route path='/succsess-buy' element={<SuccessBuy />}/>
         </Routes>
     </div>
   );

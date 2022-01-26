@@ -1,7 +1,7 @@
 import './PaymentDetails.scss';
 import { useState } from 'react';
-import PaymentInputs from '../PaymentInputs/PaymentInputs';
-import CashDelivery from '../CashDelivery/CashDelivery';
+import PaymentInputs from './PaymentInputs/PaymentInputs';
+import CashDelivery from './CashDelivery/CashDelivery';
 import InputRadio from '../../../../form/InputRadio';
 
 function PaymentDetails() {

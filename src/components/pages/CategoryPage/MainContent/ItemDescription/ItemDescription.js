@@ -1,5 +1,5 @@
 import './ItemDescription.scss';
-import Button from '../../../form/Button';
+import Button from '../../../../form/Button';
 
 
 function ItemDescription({image, title, desc, render, slug}) {

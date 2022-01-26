@@ -1,7 +1,7 @@
 import './Home.scss';
-import Header from './Header';
+import Header from './Header/Header';
 import Thumbnail from '../GlobalLayouts/Thumbnail/Thumbnail';
-import Products from './Products';
+import Products from './Products/Products';
 import About from '../GlobalLayouts/About/About';
 import Footer from '../GlobalLayouts/Footer/Footer';
 
