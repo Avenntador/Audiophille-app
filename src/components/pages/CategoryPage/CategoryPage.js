@@ -1,14 +1,14 @@
 import './CategoryPage.scss';
 
-import Thumbnail from '../GlobalLayouts/Thumbnail/Thumbnail';
-import Footer from '../GlobalLayouts/Footer/Footer';
-import About from '../GlobalLayouts/About/About';
+import Thumbnail from '../../GlobalLayouts/Thumbnail/Thumbnail';
+import Footer from '../../GlobalLayouts/Footer/Footer';
+import About from '../../GlobalLayouts/About/About';
 import MainContent from './MainContent/MainContent';
 import Header from './Header/Header';
 
 import { useState, useEffect } from 'react';
 
-function CategoryPage({categoryType, toggleModal}) {
+function CategoryPage({ categoryType }) {
 
     const [category, setCategory] = useState([]);
     const [categoryHeader, setCategoryHeader] = useState('');
@@ -31,7 +31,7 @@ function CategoryPage({categoryType, toggleModal}) {
     return (
         <>
             <header className='category__header'>
-                <Header categoryHeader={categoryHeader} toggleModal={toggleModal}/>
+                <Header categoryHeader={categoryHeader} />
             </header>
             <div className="category__main">
                 <MainContent category={category} />

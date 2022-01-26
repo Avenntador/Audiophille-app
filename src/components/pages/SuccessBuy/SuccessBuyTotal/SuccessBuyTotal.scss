@@ -1,0 +1,23 @@
+.success-buy {
+    &__total {
+        width: 19.8rem;
+        background-color: $color-black-primary;
+        border-radius: 0 .8rem .8rem 0;
+        @include dflex-center;
+
+        & > div > * {
+            margin-bottom: .8rem;
+        }
+
+        & > div > .title {
+            color: rgba(255, 255, 255, 0.5);
+            mix-blend-mode: normal;
+        }
+
+        & > div > .price {
+            font-size: 1.8rem;
+            font-family: $font-family-bold;
+            color: white;
+        }
+    }
+}

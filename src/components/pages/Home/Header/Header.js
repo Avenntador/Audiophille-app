@@ -1,5 +1,5 @@
 import './Header.scss';
-import Navbar from '../../GlobalLayouts/Navbar/Navbar';
+import Navbar from '../../../GlobalLayouts/Navbar/Navbar';
 import Button from '../../../form/Button';
 
 function Header({toggleModal}) {

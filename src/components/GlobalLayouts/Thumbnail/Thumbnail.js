@@ -1,5 +1,5 @@
 import './Thumbnail.scss';
-import SecondaryButton from '../../../form/SecondaryButton';
+import SecondaryButton from '../../form/SecondaryButton';
 
 
 let ThumbnailHeadphoneImg = '/assets/shared/desktop/image-category-thumbnail-headphones.png';

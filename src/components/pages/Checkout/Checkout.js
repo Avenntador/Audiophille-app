@@ -1,6 +1,6 @@
 import './Checkout.scss';
-import Navbar from '../GlobalLayouts/Navbar/Navbar';
-import Footer from '../GlobalLayouts/Footer/Footer';
+import Navbar from '../../GlobalLayouts/Navbar/Navbar';
+import Footer from '../../GlobalLayouts/Footer/Footer';
 import Summary from './Summary/Summary';
 import UserInfoInputs from './UserInfoInputs/UserInfoInputs';
 

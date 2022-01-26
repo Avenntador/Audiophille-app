@@ -1,10 +1,12 @@
 import './Header.scss';
-import Navbar from '../../GlobalLayouts/Navbar/Navbar';
+import Navbar from '../../../GlobalLayouts/Navbar/Navbar';
 
-function Header({categoryHeader, toggleModal}) {
-    return(
+
+function Header({ categoryHeader }) {
+
+    return (
         <div className="header__content">
-            <Navbar toggleModal={toggleModal}/>
+            <Navbar />
             <h2 className="heading__two">{categoryHeader}</h2>
         </div>
     )
