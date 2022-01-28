@@ -1,6 +1,6 @@
 # Frontend Mentor - Audiophille e-commerce website solution
 
-This is a solution to the [Product feedback app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/audiophile-ecommerce-website-C8cuSd_wx).
+This is a solution to the [Audiophille e-commerce website](https://www.frontendmentor.io/challenges/audiophile-ecommerce-website-C8cuSd_wx).
 
 ## Table of contents
 
