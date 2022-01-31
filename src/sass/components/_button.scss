@@ -6,6 +6,7 @@
     font-size: $font-size-button;
     line-height: $line-height-button;
     letter-spacing: $letter-spacing-button;
+    border: none;
 
     &__one, &__two, &__black, &__transparent {
         width: 16rem;

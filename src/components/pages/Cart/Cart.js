@@ -1,10 +1,14 @@
 import './Cart.scss';
-
+import { selectCartProductsCart, removeAll } from '../../../redux/reducers/cartReducerSlice';
+import { useSelector, useDispatch } from 'react-redux';
 import Button from '../../form/Button';
 import CartItem from './CartItem/CartItem';
 
 
-function Cart({toggleModal}) {
+function Cart({ toggleModal }) {
+
+    const dispatch = useDispatch();
+    const productsCart = useSelector(selectCartProductsCart);
 
 
     const clickHandler = (e) => {
@@ -13,23 +17,37 @@ function Cart({toggleModal}) {
         }
     }
 
-    return(
+    let totalPrice = 0;
+    Object.keys(productsCart).map(item => {
+        totalPrice += productsCart[item]['price'] * productsCart[item]['itemQuantity'];
+    })
+
+    return (
         <div onClick={clickHandler} className='cart-container'>
             <div className="cart">
                 <div className="cart__header">
-                    <h6 className="heading__six">cart (3)</h6>
-                    <p className="paragraph">Remove all</p>
+                    <h6 className="heading__six">cart ({Object.keys(productsCart).length})</h6>
+                    <p onClick={() => dispatch(removeAll())} className="paragraph remove_btn">Remove all</p>
                 </div>
-                <CartItem />
-                <CartItem />
-                <CartItem />
-                <CartItem />
+
+                {Object.keys(productsCart).map(item => {
+                    return <CartItem
+                        key={productsCart[item]['id']}
+                        id={productsCart[item]['id']}
+                        image={productsCart[item]['image']}
+                        name={productsCart[item]['name']}
+                        price={productsCart[item]['price']}
+                        quantity={productsCart[item]['itemQuantity']}
+                    />
+                })}
+
                 <div className="cart__total">
                     <p className="cart__total_title">total</p>
-                    <p className="cart__total_total-price">$ 5,396</p>
+                    <p className="cart__total_total-price">$ {totalPrice}</p>
                 </div>
+                
                 <Button type={'one'} title='checkout' />
-            </div> 
+            </div>
         </div>
     )
 }

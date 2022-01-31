@@ -1,15 +1,16 @@
 import '../../sass/components/_cart-counter.scss';
-import { useState } from 'react';
+import { incrementItemQuantity, decrementItemQuantity } from '../../redux/reducers/cartReducerSlice';
+import { useDispatch } from 'react-redux';
 
-function CartCounter() {
+function CartCounter({ id, quantity }) {
 
-    const [itemQuantity, setItemQuantity] = useState(0);
+    const dispatch = useDispatch();
 
     return (
         <div className='cart-counter'>
-            <span className='cart-counter__plus'>+</span>
-            <span className='cart-counter__amount'>{itemQuantity}</span>
-            <span className='cart-counter__minus'>-</span>
+            <span onClick={() => dispatch(incrementItemQuantity(id))} className='cart-counter__plus'>+</span>
+            <span className='cart-counter__amount'>{quantity}</span>
+            <span onClick={() => dispatch(decrementItemQuantity(id))} className='cart-counter__minus'>-</span>
         </div>
     );
 }

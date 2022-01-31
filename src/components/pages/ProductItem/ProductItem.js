@@ -34,7 +34,7 @@ function ProductItem() {
 
     if (Object.keys(product).length !== 0) {
         let isNew = product.new ? () => <p className="overline">new product</p> : null;
-  
+
         return (
             <>
                 <header className="product-header">
@@ -45,6 +45,8 @@ function ProductItem() {
                     <div className="product">
                         <PreviewImage image={product.image.desktop} />
                         <Description
+                            id={product.id}
+                            image={product.image.desktop}
                             name={product.name}
                             description={product.description}
                             price={product.price}
