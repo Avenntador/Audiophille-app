@@ -30,4 +30,7 @@
 
 .back-btn {
     cursor: pointer;
+    &:hover {
+        color: $color-primary;
+    }
 }

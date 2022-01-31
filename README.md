@@ -21,13 +21,13 @@ This is a solution to the [Audiophille e-commerce website](https://www.frontendm
 Users should be able to:
 
 - See hover states for all interactive elements on the page :heavy_check_mark:
-- Add/Remove products from the cart
+- Add/Remove products from the cart :heavy_check_mark:
 - Edit product quantities in the cart :heavy_check_mark:
 - Fill in all fields in the checkout
 - Receive form validations if fields are missed or incorrect during checkout
-- See correct checkout totals depending on the products in the cart
-  - Shipping always adds $50 to the order
-  - VAT is calculated as 20% of the product total, excluding shipping
+- See correct checkout totals depending on the products in the cart :heavy_check_mark:
+  - Shipping always adds $50 to the order :heavy_check_mark:
+  - VAT is calculated as 20% of the product total, excluding shipping :heavy_check_mark:
 - See an order confirmation modal after checking out with an order summary
 
 ### Screenshot

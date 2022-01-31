@@ -1,7 +1,7 @@
 import './Cart.scss';
 import { selectCartProductsCart, removeAll } from '../../../redux/reducers/cartReducerSlice';
 import { useSelector, useDispatch } from 'react-redux';
-import Button from '../../form/Button';
+import { Link } from 'react-router-dom';
 import CartItem from './CartItem/CartItem';
 
 
@@ -45,8 +45,13 @@ function Cart({ toggleModal }) {
                     <p className="cart__total_title">total</p>
                     <p className="cart__total_total-price">$ {totalPrice}</p>
                 </div>
-                
-                <Button type={'one'} title='checkout' />
+
+                {Object.keys(productsCart).length > 0
+                    ?
+                    <Link className={`btn btn__one`} to={'/checkout'}>checkout</Link>
+                    : <h6 className="heading__six">Empty</h6>
+                }
+
             </div>
         </div>
     )

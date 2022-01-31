@@ -38,7 +38,7 @@ function App() {
           <Route path='speakers/:productId' element={<ProductItem />} />
 
           <Route path='/checkout' element={<Checkout />} />
-          <Route path='/succsess-buy' element={<SuccessBuy />} />
+          {/* <Route path='/succsess-buy' element={<SuccessBuy />} /> */}
         </Routes>
       </ModalContext.Provider>
     </div>

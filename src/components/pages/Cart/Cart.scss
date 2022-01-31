@@ -23,6 +23,8 @@
 
     & > :last-child {
         width: 100%;
+        text-align: center;
+        
     }
    
     &__header {
@@ -55,4 +57,8 @@
 
 .remove_btn {
     cursor: pointer;
+
+    &:hover {
+        color: $color-primary;
+    }
 }

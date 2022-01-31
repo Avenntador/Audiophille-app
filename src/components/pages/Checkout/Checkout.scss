@@ -14,5 +14,11 @@
 
 .back-btn {
     margin: 7.9rem auto 0 auto; 
+
+    & > p {
+        &:hover {
+            color: $color-primary;
+        }
+    }
 }
 

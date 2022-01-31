@@ -1,9 +1,8 @@
 import './Description.scss';
-import { useState, useContext } from 'react';
+import { useState, useContext, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../../../../redux/reducers/cartReducerSlice';
-import {ModalContext} from '../../../App';
-
+import { ModalContext } from '../../../App';
 
 function Description({ render = null, id, image, name, description, price }) {
 
